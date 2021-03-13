@@ -46,7 +46,7 @@ void loop() {
   // the EEPROM, so go back to 0 when we hit 512.
   // save all changes to the flash.
  
-  if (done) {
+  if (addr == 40) {
     addr = 0;
     if (EEPROM.commit()) {
       Serial.println("EEPROM successfully committed");
