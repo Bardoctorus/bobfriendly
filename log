@@ -1,0 +1,11 @@
+
+
+
+
+
+-- enterprise aubergine
+If you set two distinct areads in eeeprom for the wifi creds then you can read the ends by finding the trailing 0.
+
+Actually you don't even need to do that, just take the two strings and put them in 1 space apart, and they'll be seperated by a single 0 in memory.
+
+Also look into persistent wifi cred and see if you can use those instead as it might be way easier.
