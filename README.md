@@ -15,7 +15,11 @@ Next we need to:
 - Make a test server to talk to
 - Send some values
 
+Currently I'm using a Wemos D1 mini, I was using a larger Node MCU with the esp8266mod chip (which is the same as the 12E right?) but it wouldn't play nice with eeprom. 
 
+# What's happening now?
+
+- Serial reads in to EEPROM, reads out and puts in char array, so text is preserved. This will likely be simpler when using web server.
 
 # Things to think about
 
